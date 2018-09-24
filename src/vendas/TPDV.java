@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class TPDV {
-	private List<Venda> vendas = new ArrayList<>();
+	public List<Venda> vendas = new ArrayList<>();
 	
 	public Venda iniciarVenda(){
 		Venda venda = new Venda();
@@ -22,7 +22,6 @@ public class TPDV {
 		System.out.println(adicionaItem);
 		
 		if(adicionaItem.equals("1")){
-			System.out.println("teste");
 			return true;
 		}
 		

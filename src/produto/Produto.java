@@ -1,6 +1,7 @@
 package produto;
 
 import java.io.Serializable;
+import java.util.Scanner;
 
 public class Produto implements Serializable {
 	
@@ -9,11 +10,16 @@ public class Produto implements Serializable {
 	private String descricao;
 	private float preco;
 	
-	public Produto(int id, String descricao, float preco) {
-		super();
-		this.id = id;
-		this.descricao = descricao;
-		this.preco = preco;
+	public void criaProduto(){
+		Scanner leitor = new Scanner(System.in);
+		System.out.println("--------CADASTRO DE PRODUTO---------");
+		System.out.println("\n\nDigite o id:");
+		this.id = leitor.nextInt();
+		System.out.println("\n\nDigite a descricao:");
+		leitor = new Scanner(System.in);
+		this.descricao = leitor.nextLine();
+		System.out.println("\n\nDigite o preco:");
+		this.preco = leitor.nextFloat();
 	}
 	
 	public int getId() {

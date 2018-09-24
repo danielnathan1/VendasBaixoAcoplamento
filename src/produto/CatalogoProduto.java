@@ -7,7 +7,7 @@ import java.util.List;
 public class CatalogoProduto implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	private List<Produto> produtos = new ArrayList();
+	public List<Produto> produtos = new ArrayList();
 	
 	public void listaTodosProdutos(){
 		for(Produto produto: this.produtos){
